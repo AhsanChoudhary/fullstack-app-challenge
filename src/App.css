@@ -1,4 +1,11 @@
-  body {
+#nav {
+  align-items: right;
+  box-sizing: border-box;
+  margin: '60px';
+  padding: '20px';
+}
+
+body {
     background-color: rgb(183, 222, 249);
   }
 
