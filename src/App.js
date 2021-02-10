@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 import Todos from './components/Todos';
 import Header from './components/Header';
-import Footer from './components/Footer';
-import AddTodo from './components/AddTodo'
-import { v4 as uuidv4 } from 'uuid'
+import AddTodo from './components/AddTodo';
+import Signup from './components/Signup';
+import { Route, BrowserRouter, Link, Redirect } from "react-router-dom";
+import { v4 as uuidv4 } from 'uuid';
 import './App.css';
 
 
@@ -57,18 +58,25 @@ class App extends Component {
   }
   render() {
   return (
+    <BrowserRouter>
     <div className="App">
       <div className= 'container'>
+        <ul>
+      <Link to='/'>Home</Link>
+      <Link to='/Register'>Register</Link>
+      <Link to='/Login'>Login</Link>
+        </ul>
         <Header />
         <AddTodo addTodo={this.addTodo}/>
         <Todos todos={this.state.todos} markComplete={this.markComplete} 
         delTodo={this.delTodo} />
+        
         </div>
-        <div>
-          <Footer />
-        </div>
+        <Route exact path="/Register" />
+        <Route path='/Login' />
+
     </div>
+    </BrowserRouter>
   );
 }
 }
-export default App;
