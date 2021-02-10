@@ -10,9 +10,9 @@ function Header() {
     )
 }
 
-const headerStyle = {
-    background: 'darkslategrey',
-    color: 'black',
+const headerStyle = { 
+    background: '#DEDFED',
+    color: 'darkslategrey',
     textAlign: 'center',
     padding: '10px',
     margin: '15px',

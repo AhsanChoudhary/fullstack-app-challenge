@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Todos from './components/Todos';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import AddTodo from './components/AddTodo'
 import { v4 as uuidv4 } from 'uuid'
 import './App.css';
@@ -62,6 +63,9 @@ class App extends Component {
         <AddTodo addTodo={this.addTodo}/>
         <Todos todos={this.state.todos} markComplete={this.markComplete} 
         delTodo={this.delTodo} />
+        </div>
+        <div>
+          <Footer />
         </div>
     </div>
   );
