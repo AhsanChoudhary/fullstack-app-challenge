@@ -63,10 +63,10 @@ class App extends Component {
     <div className="App">
       <div className= 'container'>
         <ul>
-          <Link to='/'>Home</Link>
-          <Link to='/Register'>Register</Link>
-          <Link to='/Login'>Login</Link>
-          <Link to='/Logout'>Logout</Link>
+          <Link to='/'>&nbsp;Home&nbsp;</Link>
+          <Link to='/Register'>&nbsp;Register&nbsp;</Link>
+          <Link to='/Login'>&nbsp;Login&nbsp;</Link>
+          <Link to='/Logout'>&nbsp;Logout&nbsp;</Link>
         </ul>
       </div>
 
